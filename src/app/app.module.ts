@@ -7,6 +7,8 @@ import { AppComponent } from './app.component';
 import { HeroesComponent } from './heroes/heroes.component';
 import { HeroDetailsComponent } from './hero-details/hero-details.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { PlanetsComponent } from './planets/planets.component';
+import { PlanetDetailsComponent } from './planet-details/planet-details.component';
 
 @NgModule({
   declarations: [
@@ -14,6 +16,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     HeroesComponent,
     HeroDetailsComponent,
     DashboardComponent,
+    PlanetsComponent,
+    PlanetDetailsComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],

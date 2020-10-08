@@ -15,4 +15,8 @@ export class HeroesService {
   getHeroes(): Observable<IResponse<IHero[]>> {
     return this.httpClient.get<IResponse<IHero[]>>(this.baseUrl);
   }
+
+  getHero(id: string): Observable<IHero> {
+    return this.httpClient.get<IHero>(`${this.baseUrl}/${id}/`);
+  }
 }

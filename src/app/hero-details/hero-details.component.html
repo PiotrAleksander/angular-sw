@@ -1,1 +1,4 @@
-<p>hero-details works!</p>
+<article>
+    <h2>{{hero.name}}</h2>
+    <h3 routerLink='/planet/{{hero.homeworld.slice(-2, -1)}}'>{{hero.homeworld}}</h3>
+</article>

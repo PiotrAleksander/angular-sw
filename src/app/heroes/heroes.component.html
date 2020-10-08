@@ -1,5 +1,5 @@
 <ol>
-    <li *ngFor="let hero of heroes">
+    <li *ngFor="let hero of heroes" routerLink='/hero/{{hero.url.slice(-2, -1)}}'>
         {{ hero.name }}, {{ hero.height }}cm height
     </li>
 </ol>
