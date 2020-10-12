@@ -1,1 +1,5 @@
-<p>planets works!</p>
+<ul>
+    <li *ngFor="let planet of planets" routerLink="/planet/{{planet.url.slice(-2, -1)}}">
+        {{ planet.name }}
+    </li>
+</ul>

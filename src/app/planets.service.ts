@@ -8,7 +8,8 @@ import { IResponse, IPlanet } from './types';
   providedIn: 'root',
 })
 export class PlanetsService {
-  baseUrl = '';
+  private baseUrl = 'https://swapi.dev/api/planets';
+
   constructor(private httpClient: HttpClient) {}
 
   getPlanets(): Observable<IResponse<IPlanet[]>> {
