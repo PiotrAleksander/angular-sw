@@ -1,0 +1,8 @@
+<ol>
+  <li
+    *ngFor="let starship of starships"
+    routerLink="/starship/{{ starship.url.slice(-2, -1) }}"
+  >
+    {{ starship.name }}
+  </li>
+</ol>
