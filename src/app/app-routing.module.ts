@@ -7,6 +7,8 @@ import { Routes, RouterModule } from '@angular/router';
 import { HeroesComponent } from './heroes/heroes.component';
 import { HeroDetailsComponent } from './hero-details/hero-details.component';
 import { VehiclesComponent } from './vehicles/vehicles.component';
+import { StarshipsComponent } from './starships/starships.component';
+import { StarshipDetailsComponent } from './starship-details/starship-details.component';
 
 const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: '/dashboard' },
@@ -17,6 +19,8 @@ const routes: Routes = [
   { path: 'planet/:id', component: PlanetDetailsComponent },
   { path: 'vehicles', component: VehiclesComponent },
   { path: 'vehicle/:id', component: VehicleDetailsComponent },
+  { path: 'starship/:id', component: StarshipDetailsComponent },
+  { path: 'starships', component: StarshipsComponent },
   { path: '**', redirectTo: '/dashboard' },
 ];
 
