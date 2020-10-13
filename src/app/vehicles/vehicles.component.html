@@ -1,0 +1,5 @@
+<ol>
+    <li *ngFor="let vehicle of vehicles" routerLink="/vehicle/{{vehicle.url.slice(-2, -1)}}">
+        {{ vehicle.name }}
+    </li>
+</ol>

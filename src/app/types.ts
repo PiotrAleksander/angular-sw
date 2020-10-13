@@ -15,10 +15,10 @@ export interface IHero {
   skin_color: string;
   created: string;
   edited: string;
-  species: string[];
-  starships: string[];
+  species: string[]; // points to the /species resource, an array of urls
+  starships: string[]; // points to the /starships resource, an array of urls
   url: string;
-  vehicles: string[];
+  vehicles: string[]; // points to the /vehicles resource, an array of urls
 }
 
 export interface IPlanet {
@@ -26,14 +26,33 @@ export interface IPlanet {
   created: string;
   diameter: string;
   edited: string;
-  films: string[];
+  films: string[]; // points to the /films resource, an array of urls
   gravity: string;
   name: string;
   orbital_period: string;
   population: string;
-  residents: string[];
+  residents: string[]; // points to the /people resource, an array of urls
   rotation_period: string;
   surface_water: string;
   terrain: string;
   url: string;
+}
+
+export interface IVehicle {
+  cargo_capacity: string;
+  consumables: string;
+  cost_in_credits: string;
+  created: string;
+  crew: string;
+  edited: string;
+  length: string;
+  manufacturer: string;
+  max_atmosphering_speed: string;
+  model: string;
+  name: string;
+  passengers: string;
+  pilots: string[]; // points to the /people resource, an array of urls
+  films: string[]; // points to the /films resource, an array of urls
+  url: string;
+  vehicle_class: string;
 }
