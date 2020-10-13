@@ -13,6 +13,8 @@ import { PlanetDetailsComponent } from './planet-details/planet-details.componen
 import { VehiclesComponent } from './vehicles/vehicles.component';
 import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.component';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { StarshipsComponent } from './starships/starships.component';
+import { StarshipDetailsComponent } from './starship-details/starship-details.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +26,8 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
     PlanetDetailsComponent,
     VehiclesComponent,
     VehicleDetailsComponent,
+    StarshipsComponent,
+    StarshipDetailsComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule, MatButtonModule, NoopAnimationsModule],
   providers: [],
